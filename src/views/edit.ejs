@@ -1,0 +1,28 @@
+<%- include('partials/header'); -%>
+    <!-- FORM -->
+    <div class="container">
+      <div class="row">
+        <!-- FORM -->
+        <div class="col-md-5 offset-md-3">
+          <div class="card">
+            <div class="card-body">
+              <form class="" action="/edit/<%= task._id;%>" method="post">
+                <div class="form-group">
+                  <input type="text" name="title" placeholder="Inserte titulo"
+                  class="form-control"
+                  value="<%= task.title; %>">
+                </div>
+                <div class="form-group">
+                  <textarea name="description" cols="80" class="form-control"
+                  placeholder="Inserte descripcion">
+                    <%= task.description;%>
+                  </textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">UPDATE</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<%- include('partials/footer'); -%>

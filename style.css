@@ -1,0 +1,37 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    color: black;
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+nav
+{  
+    background-color: black;
+    display: list-item;
+}
+
+a
+{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;    
+}
+
+ul
+{
+    float: right;
+    display: block;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color:red;
+    font-weight: bold;
+}
